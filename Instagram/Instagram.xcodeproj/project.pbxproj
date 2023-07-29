@@ -20,6 +20,8 @@
 		BBC608562A74CB3C00233F9B /* InstagramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC608552A74CB3C00233F9B /* InstagramUITests.m */; };
 		BBC608582A74CB3C00233F9B /* InstagramUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC608572A74CB3C00233F9B /* InstagramUITestsLaunchTests.m */; };
 		BBC608672A74D81700233F9B /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = BBC608662A74D81700233F9B /* Keys.plist */; };
+		BBC6086B2A756FDB00233F9B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC6086A2A756FDB00233F9B /* LoginViewController.m */; };
+		BBC6086E2A75729100233F9B /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC6086D2A75729100233F9B /* SignUpViewController.m */; };
 		FCD2499E22A910EA6972A8F3 /* Pods_InstagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53212068A3F019A51B0E070E /* Pods_InstagramTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,10 @@
 		BBC608552A74CB3C00233F9B /* InstagramUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstagramUITests.m; sourceTree = "<group>"; };
 		BBC608572A74CB3C00233F9B /* InstagramUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstagramUITestsLaunchTests.m; sourceTree = "<group>"; };
 		BBC608662A74D81700233F9B /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		BBC608692A756FDB00233F9B /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		BBC6086A2A756FDB00233F9B /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		BBC6086C2A75729100233F9B /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		BBC6086D2A75729100233F9B /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		CF1813DCAAE02D871C28E4A1 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,8 +157,7 @@
 				BBC608302A74CB3A00233F9B /* AppDelegate.m */,
 				BBC608322A74CB3A00233F9B /* SceneDelegate.h */,
 				BBC608332A74CB3A00233F9B /* SceneDelegate.m */,
-				BBC608352A74CB3A00233F9B /* ViewController.h */,
-				BBC608362A74CB3A00233F9B /* ViewController.m */,
+				BBC608682A756FAA00233F9B /* VCs */,
 				BBC608382A74CB3A00233F9B /* Main.storyboard */,
 				BBC6083B2A74CB3C00233F9B /* Assets.xcassets */,
 				BBC6083D2A74CB3C00233F9B /* LaunchScreen.storyboard */,
@@ -177,6 +182,19 @@
 				BBC608572A74CB3C00233F9B /* InstagramUITestsLaunchTests.m */,
 			);
 			path = InstagramUITests;
+			sourceTree = "<group>";
+		};
+		BBC608682A756FAA00233F9B /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				BBC608352A74CB3A00233F9B /* ViewController.h */,
+				BBC608362A74CB3A00233F9B /* ViewController.m */,
+				BBC608692A756FDB00233F9B /* LoginViewController.h */,
+				BBC6086A2A756FDB00233F9B /* LoginViewController.m */,
+				BBC6086C2A75729100233F9B /* SignUpViewController.h */,
+				BBC6086D2A75729100233F9B /* SignUpViewController.m */,
+			);
+			path = VCs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,8 +438,10 @@
 			files = (
 				BBC608372A74CB3A00233F9B /* ViewController.m in Sources */,
 				BBC608312A74CB3A00233F9B /* AppDelegate.m in Sources */,
+				BBC6086E2A75729100233F9B /* SignUpViewController.m in Sources */,
 				BBC608422A74CB3C00233F9B /* main.m in Sources */,
 				BBC608342A74CB3A00233F9B /* SceneDelegate.m in Sources */,
+				BBC6086B2A756FDB00233F9B /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
