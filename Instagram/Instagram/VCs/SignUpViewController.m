@@ -38,8 +38,6 @@
     [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (error != nil)   {
             NSLog(@"%@", error.localizedDescription);
-        }   else    {
-            NSLog(@"User registered successfully");
         }
     }];
 }
