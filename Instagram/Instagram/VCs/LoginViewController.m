@@ -33,11 +33,29 @@
     
     [PFUser logInWithUsernameInBackground:username password:password block:^(PFUser *user, NSError *error) {
         if (error != nil)   {
-            NSLog(@"User log in failed: %@", error.localizedDescription);
+            [self showAlert:error];
         }   else    {
             
         }
     }];
+}
+
+-(void)showAlert:(NSError *) error {
+    //create the UIActionAlert
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:error.localizedFailureReason message:error.localizedDescription preferredStyle:UIAlertControllerStyleAlert];
+    
+    //create the try again action
+    UIAlertAction *tryAgainAction = [UIAlertAction actionWithTitle:@"Try Again" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //dismiss the alert controller and retry logging in
+        [alertController dismissViewControllerAnimated:YES completion:^{
+        }];
+    }];
+    
+    //add the try again action to the alert controller
+    [alertController addAction:tryAgainAction];
+    
+    //present the alert
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 
