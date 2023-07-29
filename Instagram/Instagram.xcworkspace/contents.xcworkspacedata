@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Property List.plist">
-   </FileRef>
-   <FileRef
       location = "group:Instagram.xcodeproj">
    </FileRef>
    <FileRef
