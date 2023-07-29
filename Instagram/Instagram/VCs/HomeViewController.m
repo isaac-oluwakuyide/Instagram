@@ -1,43 +1,38 @@
 //
-//  LoginViewController.m
+//  HomeViewController.m
 //  Instagram
 //
 //  Created by Isaac Oluwakuyide on 7/29/23.
 //
 
-#import "LoginViewController.h"
-#import "SignUpViewController.h"
-#import "Parse/Parse.h"
+#import "HomeViewController.h"
+#import <Parse/Parse.h>
 
-@interface LoginViewController ()
-@property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
-@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@interface HomeViewController ()
 
 @end
 
-@implementation LoginViewController
+@implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
-
-- (IBAction)didLogin:(id)sender {
-    [self loginUser];
+- (IBAction)didLogOut:(id)sender {
+    [self logOut];
 }
 
-//attempt to log the user in with Parse
--(void)loginUser    {
-    NSString *username = self.usernameTextField.text;
-    NSString *password = self.passwordTextField.text;
-    
-    [PFUser logInWithUsernameInBackground:username password:password block:^(PFUser *user, NSError *error) {
+-(void)logOut   {
+    [PFUser logOutInBackgroundWithBlock:^(NSError *error) {
+        //PF Current user will become nil
         if (error != nil)   {
             [self showAlert:error];
-        }   else    {
-            [self performSegueWithIdentifier:@"LoginSegue" sender:nil];
+        }
+        else{
+            [self performSegueWithIdentifier:@"LogOutSegue" sender:nil];
         }
     }];
+    
 }
 
 -(void)showAlert:(NSError *) error {
@@ -58,9 +53,8 @@
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
-
 /*
- #pragma mark - Navigation
+#pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

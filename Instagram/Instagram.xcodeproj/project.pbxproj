@@ -22,6 +22,7 @@
 		BBC608672A74D81700233F9B /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = BBC608662A74D81700233F9B /* Keys.plist */; };
 		BBC6086B2A756FDB00233F9B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC6086A2A756FDB00233F9B /* LoginViewController.m */; };
 		BBC6086E2A75729100233F9B /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC6086D2A75729100233F9B /* SignUpViewController.m */; };
+		BBC608712A75BA3E00233F9B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC608702A75BA3E00233F9B /* HomeViewController.m */; };
 		FCD2499E22A910EA6972A8F3 /* Pods_InstagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53212068A3F019A51B0E070E /* Pods_InstagramTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,8 @@
 		BBC6086A2A756FDB00233F9B /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		BBC6086C2A75729100233F9B /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		BBC6086D2A75729100233F9B /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		BBC6086F2A75BA3E00233F9B /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		BBC608702A75BA3E00233F9B /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		CF1813DCAAE02D871C28E4A1 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,6 +196,8 @@
 				BBC6086A2A756FDB00233F9B /* LoginViewController.m */,
 				BBC6086C2A75729100233F9B /* SignUpViewController.h */,
 				BBC6086D2A75729100233F9B /* SignUpViewController.m */,
+				BBC6086F2A75BA3E00233F9B /* HomeViewController.h */,
+				BBC608702A75BA3E00233F9B /* HomeViewController.m */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -441,6 +446,7 @@
 				BBC6086E2A75729100233F9B /* SignUpViewController.m in Sources */,
 				BBC608422A74CB3C00233F9B /* main.m in Sources */,
 				BBC608342A74CB3A00233F9B /* SceneDelegate.m in Sources */,
+				BBC608712A75BA3E00233F9B /* HomeViewController.m in Sources */,
 				BBC6086B2A756FDB00233F9B /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
