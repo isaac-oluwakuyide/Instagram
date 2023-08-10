@@ -26,7 +26,7 @@ The following functionality is implemented:
 - configuring TableViewCell headers
 
 ##Installation Instructions
-To clone the Instagram GitHub repository and run the app on the iPhone 14 Pro Simulator, you can follow these steps:
+###To clone the Instagram GitHub repository and run the app on the iPhone 14 Pro Simulator, you can follow these steps:
 
 1. Open Terminal on your Mac.
 2. Navigate to the directory where you want to clone the repository.
@@ -44,7 +44,3 @@ To clone the Instagram GitHub repository and run the app on the iPhone 14 Pro Si
 ## Credits
 - [AFNetworking](https://github.com/AFNetworking/AFNetworking) - networking task library
 
-
-
-
-Describe any challenges encountered while building the app.
