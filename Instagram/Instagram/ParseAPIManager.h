@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ParseAPIManager : NSObject
 
 -(void)queryPosts:(void(^)(NSArray *posts, NSError *error))completion;
+-(void)queryProfile:(void(^)(NSArray *posts, NSError *error))completion;
 
 @end
 

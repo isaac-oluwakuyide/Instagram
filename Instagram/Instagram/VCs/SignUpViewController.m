@@ -42,6 +42,8 @@
             [self presentViewController:parseAlert animated:YES completion:nil];
         }
     }];
+    
+    [self performSegueWithIdentifier:@"SignUpSegue" sender:nil];
 }
 
 /*
